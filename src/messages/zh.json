@@ -17,7 +17,7 @@
     "lastName": "WANG",
     "title": "HCI | Data & Business Analytics | Design",
     "subtitle": "产品设计本科毕业，目前就读商学硕士，主修数据分析与金融。枯燥的文字介绍太无聊了，不如直接和我的分身聊聊：",
-    "chatCta": "我的分身",
+    "chatCta": "AI 分身",
     "orTo": "或者",
     "cta": "了解更多"
   },
@@ -365,7 +365,7 @@
   "chat": {
     "title": "和我聊聊",
     "placeholder": "输入你想了解的...",
-    "welcome": "👋 你好！我是 Jiwen 的数字分身。问我任何关于他的问题吧！",
+    "welcome": "👋 你好！我是 Jiwen 的 AI 分身。问我任何关于他的问题吧！",
     "quickQuestions": [
       "为什么从设计转行做数据？",
       "你 Valorant 什么段位？",

@@ -16,8 +16,8 @@
     "name": "JIWEN",
     "lastName": "WANG",
     "title": "HCI | Data & Business Analytics | Design",
-    "subtitle": "Graduated in Product Design. Currently a Master of Commerce student majored in Data Analysis & Finance. Dumb written intro is boring, so why don't you just talk to :",
-    "chatCta": "My Avatar",
+    "subtitle": "Graduated in Product Design. Currently a Master of Commerce student majored in Data Analysis & Finance. Dumb written intro is boring, so why don't you just talk to my :",
+    "chatCta": "AI Avatar",
     "orTo": "Or to",
     "cta": "Learn More"
   },
@@ -314,7 +314,7 @@
   "chat": {
     "title": "Chat with Me",
     "placeholder": "Ask me anything...",
-    "welcome": "👋 Hi! I'm Jiwen's digital avatar. Ask me anything about him!",
+    "welcome": "👋 Hi! I'm Jiwen's AI avatar. Ask me anything about him!",
     "quickQuestions": [
       "Why did you switch from design to data?",
       "What's your Valorant rank?",
