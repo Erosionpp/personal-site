@@ -43,9 +43,14 @@ function ProjectCard({
           : ""
       }`}
     >
-      <div className="h-40 flex items-center justify-center overflow-hidden" style={{ backgroundColor: bgColor || "#f5f5f5" }}>
+      <div className="h-40 flex items-center justify-center overflow-hidden relative" style={{ backgroundColor: bgColor || "#f5f5f5" }}>
         {image ? (
-          <img src={image} alt={title} className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${bgColor ? "object-contain" : "object-cover"}`} />
+          <>
+            <img src={image} alt={title} className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${bgColor ? "object-contain" : "object-cover"}`} onContextMenu={(e) => e.preventDefault()} draggable={false} />
+            <span className="absolute bottom-1 right-1 text-white/40 text-[8px] font-light pointer-events-none select-none">
+              © Jiwen Wang
+            </span>
+          </>
         ) : (
           <div className="w-10 h-10 border border-neutral-300 flex items-center justify-center">
             <span className="text-xs text-neutral-400 font-mono">img</span>

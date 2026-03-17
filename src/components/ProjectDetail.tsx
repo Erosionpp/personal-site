@@ -144,17 +144,26 @@ export default function ProjectDetail({
                           }}
                         />
                       ) : (
-                        <motion.img
+                        <motion.div
                           key={currentIndex}
-                          src={images[currentIndex]}
-                          alt={`${project.title} - ${currentIndex + 1}`}
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
                           transition={{ duration: 0.2 }}
-                          className="w-full h-full object-contain absolute inset-0 cursor-zoom-in"
+                          className="w-full h-full absolute inset-0 cursor-zoom-in"
                           onClick={handleImageClick}
-                        />
+                        >
+                          <img
+                            src={images[currentIndex]}
+                            alt={`${project.title} - ${currentIndex + 1}`}
+                            className="w-full h-full object-contain"
+                            onContextMenu={(e) => e.preventDefault()}
+                            draggable={false}
+                          />
+                          <span className="absolute bottom-2 right-2 text-black/30 text-[9px] font-light pointer-events-none select-none">
+                            © Jiwen Wang
+                          </span>
+                        </motion.div>
                       )}
                     </AnimatePresence>
 
@@ -287,17 +296,23 @@ export default function ProjectDetail({
                   </>
                 )}
 
-                <motion.img
-                  key={`lb-${currentIndex}`}
-                  src={images[currentIndex]}
-                  alt={`${project.title} - ${currentIndex + 1}`}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.2 }}
-                  className="max-w-[90vw] max-h-[90vh] object-contain"
-                  onClick={(e) => e.stopPropagation()}
-                />
+                <div className="relative" onClick={(e) => e.stopPropagation()}>
+                  <motion.img
+                    key={`lb-${currentIndex}`}
+                    src={images[currentIndex]}
+                    alt={`${project.title} - ${currentIndex + 1}`}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.2 }}
+                    className="max-w-[90vw] max-h-[90vh] object-contain"
+                    onContextMenu={(e) => e.preventDefault()}
+                    draggable={false}
+                  />
+                  <span className="absolute bottom-4 right-4 text-white/30 text-sm font-light pointer-events-none select-none">
+                    © Jiwen Wang
+                  </span>
+                </div>
 
                 {/* Counter */}
                 <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-xs tabular-nums">
