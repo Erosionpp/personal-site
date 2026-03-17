@@ -193,15 +193,11 @@
         { "src": "/photos/dscf2257.jpg", "alt": "街拍" },
         { "src": "/photos/dscf0955.jpg", "alt": "风景" },
         { "src": "/photos/dscf3845.jpg", "alt": "建筑" },
-        { "src": "/photos/dscf0274.jpg", "alt": "人像" },
         { "src": "/photos/IMG_6859.jpg", "alt": "旅行瞬间" },
-        { "src": "/photos/dscf1902.jpg", "alt": "光与影" },
         { "src": "/photos/dscf2475.jpg", "alt": "自然细节" },
         { "src": "/photos/dscf3363.jpg", "alt": "城市风光" },
-        { "src": "/photos/dscf2501.jpg", "alt": "安静时刻" },
         { "src": "/photos/dscf1909.jpg", "alt": "街头一景" },
-        { "src": "/photos/dscf3607.jpg", "alt": "黄昏光线" },
-        { "src": "/photos/dscf2507.jpg", "alt": "日常" }
+        { "src": "/photos/dscf3607.jpg", "alt": "黄昏光线" }
       ]
     }
   },

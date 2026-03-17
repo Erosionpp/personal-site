@@ -173,15 +173,11 @@
         { "src": "/photos/dscf2257.jpg", "alt": "Street photography" },
         { "src": "/photos/dscf0955.jpg", "alt": "Landscape" },
         { "src": "/photos/dscf3845.jpg", "alt": "Architecture" },
-        { "src": "/photos/dscf0274.jpg", "alt": "Portrait" },
         { "src": "/photos/IMG_6859.jpg", "alt": "Travel moment" },
-        { "src": "/photos/dscf1902.jpg", "alt": "Light and shadow" },
         { "src": "/photos/dscf2475.jpg", "alt": "Nature detail" },
         { "src": "/photos/dscf3363.jpg", "alt": "City view" },
-        { "src": "/photos/dscf2501.jpg", "alt": "Quiet moment" },
         { "src": "/photos/dscf1909.jpg", "alt": "Street scene" },
-        { "src": "/photos/dscf3607.jpg", "alt": "Evening light" },
-        { "src": "/photos/dscf2507.jpg", "alt": "Everyday life" }
+        { "src": "/photos/dscf3607.jpg", "alt": "Evening light" }
       ]
     }
   },
