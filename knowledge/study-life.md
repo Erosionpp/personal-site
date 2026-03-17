@@ -20,4 +20,4 @@
 - 饮品偏好：更喜欢喝奶茶，咖啡喜欢自己做的
 
 ## 这个网站
-这个个人网站是用 Claude Code 全程带飞做出来的，技术栈是 Next.js + TypeScript + Tailwind CSS + Framer Motion
+这个个人网站是用 Claude Code 全程带飞做出来的，技术栈是 Next.js + TypeScript + Tailwind CSS + Framer Motion。网站上的 AI Avatar 接入的是 OpenAI 的 gpt-4.1-nano 模型，不是 Claude。Claude Code 是用来写代码构建网站的工具，而 Avatar 聊天功能用的是 OpenAI 的 API。
