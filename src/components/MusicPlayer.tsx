@@ -37,23 +37,36 @@ export default function MusicPlayer() {
     else play();
   };
 
+  const [pendingPlay, setPendingPlay] = useState(false);
+
   const skipNext = () => {
     const next = (currentIndex + 1) % playlist.length;
     setCurrentIndex(next);
     setProgress(0);
-    if (isPlaying) {
-      setTimeout(() => play(), 100);
-    }
+    setDuration(0);
+    if (isPlaying) setPendingPlay(true);
   };
 
   const skipPrev = () => {
     const prev = (currentIndex - 1 + playlist.length) % playlist.length;
     setCurrentIndex(prev);
     setProgress(0);
-    if (isPlaying) {
-      setTimeout(() => play(), 100);
-    }
+    setDuration(0);
+    if (isPlaying) setPendingPlay(true);
   };
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio || !pendingPlay) return;
+    audio.load();
+    const handleCanPlay = () => {
+      audio.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
+      setPendingPlay(false);
+      audio.removeEventListener("canplay", handleCanPlay);
+    };
+    audio.addEventListener("canplay", handleCanPlay);
+    return () => audio.removeEventListener("canplay", handleCanPlay);
+  }, [currentIndex, pendingPlay]);
 
   const handleSeek = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!audioRef.current || !hasAudio) return;
