@@ -36,7 +36,7 @@ export default function Home() {
             href="mailto:jiwen.wang2000@gmail.com"
             className="hover:text-neutral-700 transition-colors"
           >
-            Email
+            jiwen.wang2000@gmail.com
           </a>
           <span className="text-neutral-200">·</span>
           <a
