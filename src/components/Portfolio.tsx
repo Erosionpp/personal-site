@@ -166,12 +166,19 @@ export function PortfolioPhotography() {
               className="break-inside-avoid cursor-pointer group overflow-hidden"
               onClick={() => setLightbox({ open: true, index: i })}
             >
-              <img
-                src={item.src}
-                alt={item.alt}
-                className="w-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
-                loading="lazy"
-              />
+              <div className="relative">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                  loading="lazy"
+                  onContextMenu={(e) => e.preventDefault()}
+                  draggable={false}
+                />
+                <span className="absolute bottom-2 right-2 text-white/40 text-[10px] font-light pointer-events-none select-none">
+                  © Jiwen Wang
+                </span>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -212,12 +219,18 @@ export function PortfolioPhotography() {
               </>
             )}
 
-            <img
-              src={photos[lightbox.index].src}
-              alt={photos[lightbox.index].alt}
-              className="max-w-[90vw] max-h-[90vh] object-contain"
-              onClick={(e) => e.stopPropagation()}
-            />
+            <div className="relative" onClick={(e) => e.stopPropagation()}>
+              <img
+                src={photos[lightbox.index].src}
+                alt={photos[lightbox.index].alt}
+                className="max-w-[90vw] max-h-[90vh] object-contain"
+                onContextMenu={(e) => e.preventDefault()}
+                draggable={false}
+              />
+              <span className="absolute bottom-4 right-4 text-white/30 text-sm font-light pointer-events-none select-none">
+                © Jiwen Wang
+              </span>
+            </div>
 
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-xs tabular-nums">
               {lightbox.index + 1} / {photos.length}
