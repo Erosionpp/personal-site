@@ -1,0 +1,378 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "简介",
+    "education": "教育",
+    "research": "研究",
+    "experience": "经历",
+    "skills": "技能",
+    "hobbies": "爱好",
+    "projects": "作品",
+    "projectsProfessional": "专业作品",
+    "projectsPhotography": "摄影作品"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "JIWEN",
+    "lastName": "WANG",
+    "title": "HCI | Data & Business Analytics | Design",
+    "subtitle": "产品设计本科毕业，目前就读商学硕士，主修数据分析与金融。枯燥的文字介绍太无聊了，不如直接和我的分身聊聊：",
+    "chatCta": "我的分身",
+    "orTo": "或者",
+    "cta": "了解更多"
+  },
+  "intro": {
+    "title": "关于我",
+    "description": "你也可以叫我 Ero，朋友们都这么叫我。我是一名数据分析师，也是一名设计师。我对人们如何理解信息、如何做决定这件事很感兴趣——所以现在在努力学习用户如何更好地使用 AI，以及 AI 如何更好地帮助用户。"
+  },
+  "music": {
+    "prompt": "让歌单陪伴你。",
+    "noAudio": "暂无音频"
+  },
+  "portfolio": {
+    "professional": {
+      "title": "作品",
+      "tabs": [
+        "数据/金融分析",
+        "设计作品"
+      ],
+      "dataItems": [
+        {
+          "title": "澳大利亚教育与托幼服务分析",
+          "description": "对全国 17,000+ 托幼服务机构进行数据分析，识别服务缺口与质量表现趋势",
+          "tags": [
+            "Python",
+            "Data Viz",
+            "Geospatial"
+          ],
+          "image": "/projects/edu-care-cover.jpg",
+          "images": [
+            "/projects/edu-care-states.jpg",
+            "/projects/edu-care-suburbs.png",
+            "/projects/edu-care-region.png",
+            "/projects/edu-care-trends.jpg",
+            "/projects/edu-care-capacity.jpg"
+          ],
+          "detail": {
+            "background": "利用澳大利亚儿童教育与照护质量管理局（ACECQA）国家质量议程 IT 系统的数据，分析全国 17,000 多家教育与托幼服务机构。目标是找出服务缺口所在、不同地区和类型之间的质量差异，以及正在出现的趋势。",
+            "methodology": "对大规模国家注册数据进行清洗和处理。构建了多种可视化分析，包括各州质量评级对比柱状图、按服务类型划分的堆叠图、城乡容量对比箱线图、按 SA4 区域展示服务密度的等值线地图，以及 20 多年的审批趋势线。",
+            "outcomes": "发现服务高度集中在 NSW 和 VIC，大多数机构仅达到而非超过质量标准。独立幼儿园在各类型中质量表现最优。农村地区容量中位数与城市相近，但波动更大。近年来质量提升出现停滞，表明需要调整激励机制和定向资金投入。"
+          }
+        },
+        {
+          "title": "基于基函数模型的 VIX 波动率预测",
+          "description": "比较四类基函数回归模型预测市场波动率（VIX），对数变换使精度提升 14%",
+          "tags": [
+            "Python",
+            "Finance",
+            "Machine Learning"
+          ],
+          "image": "/projects/vix-cover.png",
+          "images": [],
+          "detail": {
+            "background": "CBOE 波动率指数（VIX）反映市场对标普 500 期权隐含的近期波动率预期。传统线性模型难以捕捉 VIX 数据的高度非线性动态。本项目利用 1990–2025 年共 8,920 条 VIX 观测数据，构建并验证了一个数据驱动的波动率预测模型。",
+            "methodology": "比较了四类线性基函数（LBF）模型——分段常数、分段线性、高斯径向基函数（RBF）和拉普拉斯基函数，通过网格搜索在 k ∈ {1,2,4,8,16} 上进行系统超参数调优，采用分层的训练/验证/测试集划分（50/25/25）。进一步通过对响应变量进行对数变换，改善异方差性和极端波动尖峰的影响。",
+            "outcomes": "高斯 RBF 在原始数据上取得最低测试 MSE（31.05），平滑捕捉了 2008 年金融危机和 2020 年新冠疫情的波动尖峰。对数变换将 MSE 降低约 14% 至 26.6，网格更密（k=32）且扩展更宽。最终模型预测 2026–2028 年 VIX 约为 18–19，表明市场将回归长期均值水平。"
+          },
+          "bgColor": "#0a1628"
+        },
+        {
+          "title": "泰国数字游民签证政策分析",
+          "description": "基于数据可视化分析泰国数字游民签证的竞争力、停留模式及东南亚区域定位",
+          "tags": [
+            "Tableau",
+            "Data Viz",
+            "Policy Analysis"
+          ],
+          "image": "/projects/dnv-cover.png",
+          "images": [
+            "/projects/dnv-stay-dist.png",
+            "/projects/dnv-seasonality.png",
+            "/projects/dnv-regional.png"
+          ],
+          "detail": {
+            "background": "泰国推出数字游民签证计划，允许停留最长 5 年（每次 180 天），以吸引高技能远程工作者。本项目分析了游民行为数据，并将泰国的政策竞争力与越南、马来西亚、印尼等区域竞争对手进行对比。",
+            "methodology": "构建了包含四个核心可视化的 Tableau 交互式仪表板：停留天数分布图揭示短中期停留模式，季节性趋势图展示 1–3 月和 10–12 月的到达高峰，城市分布树图（曼谷和清迈占主导），以及东南亚区域竞争对手中位停留天数对比地图。",
+            "outcomes": "发现大多数游民停留 30–90 天，超过 120 天后急剧下降。泰国的中位停留天数（约 60 天）落后于越南和马来西亚（约 90 天），说明在签证灵活性和成本方面面临竞争压力。聚类分析将用户分为短期、中期和长期三组，为分级签证类别提供了框架。建议调整政策，包括降低收入门槛和推出新的短期游民通行证。"
+          },
+          "bgColor": "#5a6e3a"
+        }
+      ],
+      "designItems": [
+        {
+          "title": "VAPORFORMER",
+          "description": "以蒸汽波美学为灵感的变形玩具设计 — 将复古未来主义艺术与机械工程融合于潮玩之中",
+          "tags": [
+            "Product Design",
+            "Rhino",
+            "KeyShot"
+          ],
+          "image": "/projects/vaporformer-logo.png",
+          "detail": {
+            "background": "艺术玩具已从静态手办演变为独立设计师驱动的创作，但大多数仍缺乏交互性，仅限于简单的四肢关节活动。本毕业设计探索了如何将蒸汽波的复古未来主义视觉语言与变形机构结合，打造一款兼具美学与工程复杂度的可交互潮玩。",
+            "methodology": "提取了三个核心蒸汽波设计元素——棱镜几何（基于光线折射的多边形机器人造型）、怀旧引用（从星球大战飞船形象提取的飞行器轮廓）、以及天线特征（80–90 年代科幻机器人头部设计）。在 Rhino 中构建完整 3D 模型，经过多轮概念草图迭代。开发了 ABS（结构外壳）+ PLA（透明装饰件与关节）的双材料体系，并基于蒸汽波色彩理论设计了多款限定配色方案。",
+            "outcomes": "完成了可在机器人与飞行器形态间自由切换的变形玩具，采用紫-粉-黄主配色，并推出 Ethereal Oasis（空灵绿洲）和 Summer Citrus（夏日柑橘）两款限定配色。设计运用了棱镜般的切面造型，在光线下呈现出蒸汽波特有的虹彩幻觉质感。"
+          },
+          "images": [
+            "/projects/vaporformer-logo.png",
+            "/projects/vaporformer-robot-concept.png",
+            "/projects/vaporformer-aircraft-concept.png",
+            "/projects/vaporformer-model.png",
+            "/projects/vaporformer-detail.png",
+            "/projects/vaporformer-exploded.png",
+            "/projects/vaporformer-transform.mp4",
+            "/projects/vaporformer-purple-render.png",
+            "/projects/vaporformer-oasis-render.png",
+            "/projects/vaporformer-citrus-render.png"
+          ],
+          "bgColor": "#ffffff"
+        },
+        {
+          "title": "INNO — 无接触消毒喷雾装置",
+          "description": "专为地铁站设计的无接触喷雾消毒设备，融合用户研究、人机工程学和极简工业设计",
+          "tags": [
+            "Product Design",
+            "Rhino",
+            "KeyShot"
+          ],
+          "image": "/projects/inno-cover.png",
+          "images": [
+            "/projects/inno-cover.jpg",
+            "/projects/inno-research.jpg",
+            "/projects/inno-sketch.jpg",
+            "/projects/inno-ergo.jpg",
+            "/projects/inno-details.jpg",
+            "/projects/inno-exploded-render.png",
+            "/projects/inno-usage.png"
+          ],
+          "detail": {
+            "background": "疫情期间，个人消毒成为日常需求。地铁站人流量大且不稳定，缺乏足够的无接触消毒设施。本项目旨在设计一款能自然融入地铁环境、不影响乘客通行的无接触喷雾消毒设备。",
+            "methodology": "针对地铁三个场景（候车区、扶梯、入口）进行用户调研，访谈不同年龄和身高的用户。建立以非接触、纤薄、整洁、亲肤为核心的设计方向。在 Rhino 中经过大量草图绘制和 3D 迭代，使用纸板模型进行人机工程验证，确定最佳喷雾高度（100cm），兼顾成人、儿童和轮椅用户。",
+            "outcomes": "完成了完整的产品设计，包括 T 型立式装置，具备自动感应、LED 反馈环、可更换瓶体系统和散热设计。合金关节连接头部与铝杆，滑开式后盖便于维护。同时设计了配套的电量与存储监控 UI 界面。"
+          },
+          "bgColor": "#d1d1d1"
+        },
+        {
+          "title": "REVO — 智能消防头盔",
+          "description": "集成 AR 显示、热成像、多传感器融合和实时 HUD 的消防头盔，提升救援中的安全性和态势感知能力",
+          "tags": [
+            "Product Design",
+            "UI/UX",
+            "AR"
+          ],
+          "image": "/projects/revo-cover-new.png",
+          "images": [
+            "/projects/revo-cover.jpg",
+            "/projects/revo-journey.jpg",
+            "/projects/revo-sketch.jpg",
+            "/projects/revo-render1.jpg",
+            "/projects/revo-render2.png",
+            "/projects/revo-visual.jpg",
+            "/projects/revo-scenario.jpg",
+            "/projects/revo-adaptive.jpg"
+          ],
+          "detail": {
+            "background": "消防员面临日益增大的工作压力和安全威胁。他们需要携带大量复杂操作的检测设备，获取和分析信息耗时费力。本项目聚焦于头盔的重新设计——作为大多数仪器汇集的核心装备，将信息集成并使其即时可用，提升效率和安全性。",
+            "methodology": "梳理了消防员的完整任务流程（准备→到达→执行→总结），识别出四个核心痛点：步骤复杂、缺乏态势感知、导航困难和总结效率低。研究了六项关键技术：火焰识别、AI 辅助决策、AR 叠加显示、眼动追踪、多传感器融合和透明 OLED 显示。设计了基于颜色编码的紧急程度和角色识别视觉语法系统。",
+            "outcomes": "交付了集成热成像摄像头的智能头盔，配备 AR 实时 HUD 显示环境数据、队友位置和任务目标。针对建筑火灾（建筑布局）、工业火灾（危险材料）和野火（风向、火势蔓延）创建了场景化 UI 适配。设计了极端条件下的自适应可见度和亮度模式。"
+          },
+          "bgColor": "#1a1a1a"
+        }
+      ]
+    },
+    "detailLabels": {
+      "background": "项目背景",
+      "methodology": "方法论",
+      "outcomes": "成果"
+    },
+    "photography": {
+      "title": "摄影作品",
+      "subtitle": "用镜头记录生活中的美好瞬间",
+      "items": [
+        { "src": "/photos/DSCF0183.jpg", "alt": "都市夜景" },
+        { "src": "/photos/dscf2257.jpg", "alt": "街拍" },
+        { "src": "/photos/dscf0955.jpg", "alt": "风景" },
+        { "src": "/photos/dscf3845.jpg", "alt": "建筑" },
+        { "src": "/photos/dscf0274.jpg", "alt": "人像" },
+        { "src": "/photos/IMG_6859.jpg", "alt": "旅行瞬间" },
+        { "src": "/photos/dscf1902.jpg", "alt": "光与影" },
+        { "src": "/photos/dscf2475.jpg", "alt": "自然细节" },
+        { "src": "/photos/dscf3363.jpg", "alt": "城市风光" },
+        { "src": "/photos/dscf2501.jpg", "alt": "安静时刻" },
+        { "src": "/photos/dscf1909.jpg", "alt": "街头一景" },
+        { "src": "/photos/dscf3607.jpg", "alt": "黄昏光线" },
+        { "src": "/photos/dscf2507.jpg", "alt": "日常" }
+      ]
+    }
+  },
+  "education": {
+    "title": "教育背景",
+    "items": [
+      {
+        "school": "悉尼大学 The University of Sydney",
+        "location": "悉尼，澳大利亚",
+        "degree": "商学硕士（Extension）- 金融与数据分析方向",
+        "time": "2024.07 – 2026.06（在读）",
+        "details": [
+          "Distinction: Merit Finish",
+          "核心课程：数据分析、数据可视化、金融机器学习应用、财务分析、可持续金融策略、国际商务"
+        ]
+      },
+      {
+        "school": "中国石油大学（华东）",
+        "location": "青岛，中国",
+        "degree": "工业设计学士",
+        "time": "2019.09 – 2023.06",
+        "details": [
+          "毕业论文：基于蒸汽波艺术的变形玩具设计",
+          "核心课程：设计理论、产品设计、UX 设计、用户行为学"
+        ]
+      }
+    ]
+  },
+  "research": {
+    "title": "研究经历",
+    "items": [
+      {
+        "title": "独立研究：人机协作开发",
+        "org": "独立研究",
+        "time": "2025 – 至今",
+        "points": [
+          "研究 AI 辅助软件开发工具（OpenClaw、Claude Code），探索非专业用户如何利用大语言模型进行编程",
+          "考察用户与 AI 编程代理的交互模式，聚焦提示工程策略、错误修正工作流和非程序员的学习轨迹",
+          "探讨 Agent AI 系统对软件开发民主化的影响及其对用户自主性和技能习得的意义"
+        ]
+      },
+      {
+        "title": "UNICEF 澳大利亚捐赠预测模型",
+        "org": "悉尼大学 学术研究项目",
+        "time": "2025",
+        "points": [
+          "运用逻辑回归、随机森林和梯度提升等机器学习方法构建捐赠概率预测模型",
+          "开展特征工程与探索性数据分析，识别捐赠行为关键预测因子"
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "工作经历",
+    "items": [
+      {
+        "company": "小芒科技 Xiaomang Technology",
+        "role": "前端设计实习生",
+        "location": "长沙，中国",
+        "time": "2024.02 – 2024.05",
+        "points": [
+          "支持前端界面开发与平台视觉设计，参与数据可视化和用户交互体验优化",
+          "制作核心视觉素材、布局设计和界面原型"
+        ]
+      },
+      {
+        "company": "Signify（飞利浦照明）",
+        "role": "产品经理助理",
+        "location": "上海，中国",
+        "time": "2022.07 – 2022.09",
+        "points": [
+          "参与产品设计项目，涵盖概念开发、视觉优化和流程优化",
+          "与工程师、设计师和商务拓展经理等跨职能团队协作"
+        ]
+      },
+      {
+        "company": "渤海银行 Bohai Bank",
+        "role": "业务助理",
+        "location": "长沙，中国",
+        "time": "2023.07 – 2024.01",
+        "points": [
+          "协助大堂运营、客户服务引导和网点工作流程优化",
+          "支持企业银行财务报表的管理与审核"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "技能",
+    "categories": [
+      {
+        "name": "编程与数据",
+        "items": [
+          "Python",
+          "C++",
+          "SQL",
+          "Excel (Advanced)",
+          "Tableau"
+        ]
+      },
+      {
+        "name": "设计与原型",
+        "items": [
+          "Figma",
+          "Photoshop",
+          "Illustrator",
+          "Rhino",
+          "SolidWorks",
+          "KeyShot"
+        ]
+      },
+      {
+        "name": "金融",
+        "items": [
+          "财务分析",
+          "风险建模",
+          "ESG 整合"
+        ]
+      },
+      {
+        "name": "语言",
+        "items": [
+          "中文（母语）",
+          "英文（流利）"
+        ]
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "兴趣爱好",
+    "categories": [
+      {
+        "name": "游戏",
+        "items": [
+          "英雄联盟",
+          "无畏契约"
+        ]
+      },
+      {
+        "name": "赛车与驾驶",
+        "items": [
+          "F1 一级方程式",
+          "无目的兜风"
+        ]
+      },
+      {
+        "name": "创作",
+        "items": [
+          "摄影",
+          "开发"
+        ]
+      },
+      {
+        "name": "音乐",
+        "items": [
+          "粤语流行"
+        ]
+      }
+    ]
+  },
+  "chat": {
+    "title": "和我聊聊",
+    "placeholder": "输入你想了解的...",
+    "welcome": "👋 你好！我是 Jiwen 的数字分身。问我任何关于他的问题吧！",
+    "quickQuestions": [
+      "为什么从设计转行做数据？",
+      "你 Valorant 什么段位？",
+      "这个网站怎么做的？",
+      "你怎么看待 AI？"
+    ],
+    "send": "发送",
+    "thinking": "思考中..."
+  }
+}

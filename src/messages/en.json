@@ -1,0 +1,327 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "education": "Education",
+    "research": "Research",
+    "experience": "Experience",
+    "skills": "Skills",
+    "hobbies": "Hobbies",
+    "projects": "Projects",
+    "projectsProfessional": "Professional",
+    "projectsPhotography": "Photography"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "JIWEN",
+    "lastName": "WANG",
+    "title": "HCI | Data & Business Analytics | Design",
+    "subtitle": "Graduated in Product Design. Currently a Master of Commerce student majored in Data Analysis & Finance. Dumb written intro is boring, so why don't you just talk to :",
+    "chatCta": "My Avatar",
+    "orTo": "Or to",
+    "cta": "Learn More"
+  },
+  "intro": {
+    "title": "About Me",
+    "description": "You can also call me Ero — that's what my friends call me. I'm a data analyst and a designer. I'm interested in how people understand information and make decisions — so now I'm trying to learn how users can better use AI, and how AI can better help users."
+  },
+  "music": {
+    "prompt": "Let playlists accompany you.",
+    "noAudio": "No audio available"
+  },
+  "portfolio": {
+    "professional": {
+      "title": "Projects",
+      "tabs": ["Data / Finance Analytics", "Design Work"],
+      "dataItems": [
+        {
+          "title": "Education & Care Services Analysis",
+          "description": "Identifying service gaps and quality performance trends across 17,000+ childcare services nationwide in Australia",
+          "tags": ["Python", "Data Viz", "Geospatial"],
+          "image": "/projects/edu-care-cover.jpg",
+          "images": [
+            "/projects/edu-care-states.jpg",
+            "/projects/edu-care-suburbs.png",
+            "/projects/edu-care-region.png",
+            "/projects/edu-care-trends.jpg",
+            "/projects/edu-care-capacity.jpg"
+          ],
+          "detail": {
+            "background": "Analyzed Australia's childcare sector using data from the National Quality Agenda IT System (ACECQA), covering 17,000+ education and care services. The goal was to identify where services are lacking, how quality varies by region and type, and what trends are emerging over time.",
+            "methodology": "Cleaned and processed large-scale national registry data. Built visualizations including bar charts comparing quality ratings across states, stacked charts by service type, box plots for urban vs. rural capacity, choropleth maps showing service density by SA4 regions, and trend lines tracking approval patterns over 20+ years.",
+            "outcomes": "Found that services concentrate heavily in NSW and VIC, with most only meeting — not exceeding — quality standards. Standalone preschools consistently outperform other types. Rural areas show similar median capacity to urban but with wider variation. Recent years show a plateau in quality improvement, suggesting a need for restructured incentives and targeted funding."
+          }
+        },
+        {
+          "title": "VIX Volatility Forecasting with Basis Function Models",
+          "description": "Comparing four basis function regression families to predict market volatility (VIX), with log transformation enhancing accuracy by 14%",
+          "tags": ["Python", "Finance", "Machine Learning"],
+          "image": "/projects/vix-cover.png",
+          "bgColor": "#0a1628",
+          "images": [
+            "/projects/vix-piecewise.png",
+            "/projects/vix-kernel.png",
+            "/projects/vix-residual.png",
+            "/projects/vix-hyperparams.png",
+            "/projects/vix-forecast.png",
+            "/projects/vix-split.png"
+          ],
+          "detail": {
+            "background": "The CBOE Volatility Index (VIX) captures market expectations of near-term volatility based on S&P 500 options. Traditional linear models struggle with the highly nonlinear dynamics of VIX data. This project built and validated a data-driven forecasting model using 8,920 VIX observations from 1990 to 2025 to reliably predict market volatility.",
+            "methodology": "Compared four families of Linear Basis Function (LBF) models — piece-wise constant, piece-wise linear, Gaussian Radial (RBF), and Laplace — with systematic hyperparameter tuning via grid search over k ∈ {1,2,4,8,16}. Applied a hierarchical train/validation/test split (50/25/25). Further improved the best model through log transformation of the response variable to handle heteroskedasticity and extreme volatility spikes.",
+            "outcomes": "Gaussian RBF achieved the lowest test MSE (31.05) on raw data, smoothly capturing both the 2008 GFC and 2020 COVID spikes. Log transformation reduced the MSE by ~14% to 26.6, producing a denser grid (k=32) with wider spread. The final model forecasts a moderate VIX of 18–19 for 2026–2028, suggesting a return to long-run norms."
+          }
+        },
+        {
+          "title": "Thailand Digital Nomad Visa Policy Analysis",
+          "description": "Data-driven visualization and analysis of Thailand's digital nomad visa competitiveness, stay patterns, and regional positioning in Southeast Asia",
+          "tags": ["Tableau", "Data Viz", "Policy Analysis"],
+          "image": "/projects/dnv-cover.png",
+          "bgColor": "#5a6e3a",
+          "images": [
+            "/projects/dnv-stay-dist.png",
+            "/projects/dnv-seasonality.png",
+            "/projects/dnv-regional.png"
+          ],
+          "detail": {
+            "background": "Thailand launched a digital nomad visa program allowing stays of up to 5 years (180 days at a time) to attract high-skilled remote workers. This project analyzed nomad behavioural data and compared Thailand's policy competitiveness against regional peers like Vietnam, Malaysia, and Indonesia.",
+            "methodology": "Built an interactive Tableau dashboard with four key visualizations: a length-of-stay distribution revealing short-to-mid-term stay patterns, a seasonality trend chart showing arrival peaks in Jan–Mar and Oct–Dec, a treemap of city-level nomad distribution (Bangkok and Chiang Mai dominating), and a regional comparison map highlighting median stay differences across Southeast Asian competitors.",
+            "outcomes": "Found that most nomads stay 30–90 days, with a sharp decline beyond 120 days. Thailand's median stay (~60 days) trails Vietnam and Malaysia (~90 days), indicating competitive pressure on visa flexibility and cost. Clustering analysis segmented users into three groups — short-term, mid-term, and long-term — providing a framework for tiered visa categories. Recommended policy adjustments including lower income thresholds and a new short-term nomad pass."
+          }
+        }
+      ],
+      "designItems": [
+        {
+          "title": "VAPORFORMER",
+          "description": "A transformable toy inspired by Vaporwave aesthetics — blending retro-futuristic art with mechanical engineering in a collectible art toy",
+          "tags": ["Product Design", "Rhino", "KeyShot"],
+          "image": "/projects/vaporformer-logo.png",
+          "bgColor": "#ffffff",
+          "images": [
+            "/projects/vaporformer-logo.png",
+            "/projects/vaporformer-robot-concept.png",
+            "/projects/vaporformer-aircraft-concept.png",
+            "/projects/vaporformer-model.png",
+            "/projects/vaporformer-detail.png",
+            "/projects/vaporformer-exploded.png",
+            "/projects/vaporformer-transform.mp4",
+            "/projects/vaporformer-purple-render.png",
+            "/projects/vaporformer-oasis-render.png",
+            "/projects/vaporformer-citrus-render.png"
+          ],
+          "detail": {
+            "background": "Art toys have shifted from static figurines to independent designer-driven creations. However, most lack interactivity — limited to simple joint articulation. This graduation project explored how transformable mechanics could bring Vaporwave's retro-futuristic visual language into a physically interactive toy, combining aesthetic appeal with engineering complexity.",
+            "methodology": "Extracted three core Vaporwave design elements — prismatic geometry (polygon-based robot form inspired by crystal refraction), nostalgic references (aircraft silhouette derived from Star Wars ship archetypes), and retro antenna features (80s–90s sci-fi robot heads). Built full 3D models in Rhino with iterative concept sketches. Developed a dual-material system using ABS for structural shells and PLA for transparent decorative components and joints. Designed multiple limited-edition color palettes rooted in Vaporwave color theory.",
+            "outcomes": "Delivered a complete transformable toy that converts between robot and aircraft modes, featuring a signature purple-pink-yellow palette with two limited colorways (Ethereal Oasis and Summer Citrus). The design integrates prism-like faceted surfaces that catch light to create the iridescent, dreamlike quality characteristic of Vaporwave art."
+          }
+        },
+        {
+          "title": "INNO — Touchless Disinfection Device",
+          "description": "A non-contact spray disinfection device designed for subway stations, combining user research, ergonomics, and minimalist industrial design",
+          "tags": ["Product Design", "Rhino", "KeyShot"],
+          "image": "/projects/inno-cover.png",
+          "bgColor": "#d1d1d1",
+          "images": [
+            "/projects/inno-cover.jpg",
+            "/projects/inno-research.jpg",
+            "/projects/inno-sketch.jpg",
+            "/projects/inno-ergo.jpg",
+            "/projects/inno-details.jpg",
+            "/projects/inno-exploded-render.png",
+            "/projects/inno-usage.png"
+          ],
+          "detail": {
+            "background": "During the pandemic, personal disinfection became a daily necessity. Subway stations, with their high and unstable foot traffic, lacked sufficient touchless disinfection facilities. This project aimed to design a non-contact spray device that fits naturally into the subway environment without disrupting passenger flow.",
+            "methodology": "Conducted user research across three subway scenarios (waiting area, escalator, entrance) and interviewed users of different ages and heights. Developed a moodboard emphasizing non-touch, thin, neat, and skin-friendly qualities. Went through extensive sketching and 3D iteration in Rhino, followed by ergonomic validation using cardboard models to determine the optimal spray height (100cm) for adults, children, and wheelchair users.",
+            "outcomes": "Delivered a complete product design featuring a T-shaped standing device with automatic induction, LED feedback ring, replaceable bottle system, and heat dissipation. The alloy articulation connects the head to the aluminum rod, with a slide-open back cover for maintenance. Designed the companion UI for battery and storage monitoring."
+          }
+        },
+        {
+          "title": "REVO — Smart Firefighter Helmet",
+          "description": "An AR-integrated firefighter helmet with thermal imaging, multi-sensor fusion, and real-time HUD to enhance safety and situational awareness during rescue operations",
+          "tags": ["Product Design", "UI/UX", "AR"],
+          "image": "/projects/revo-cover-new.png",
+          "bgColor": "#1a1a1a",
+          "images": [
+            "/projects/revo-cover.jpg",
+            "/projects/revo-journey.jpg",
+            "/projects/revo-sketch.jpg",
+            "/projects/revo-render1.jpg",
+            "/projects/revo-render2.png",
+            "/projects/revo-visual.jpg",
+            "/projects/revo-scenario.jpg",
+            "/projects/revo-adaptive.jpg"
+          ],
+          "detail": {
+            "background": "Firefighters face increasing work pressure and safety threats. They carry a wide range of detection apparatus with complex operations, making information access time-consuming. This project focused on redesigning the helmet — where most instruments converge — to integrate information and make it instantly accessible, improving both efficiency and safety.",
+            "methodology": "Mapped the full firefighter journey (preparation → accessing → performing → debrief) and identified four key pain points: complex steps, lack of situational awareness, navigation difficulty, and inefficient debriefing. Researched six enabling technologies including flame recognition, AI-driven decision support, AR overlay, eye-tracking, multi-sensor fusion, and transparent OLED displays. Designed a visual grammar system with color-coded urgency levels and role identification.",
+            "outcomes": "Delivered a smart helmet featuring an integrated thermal imaging camera, AR display with real-time HUD showing environment data, teammate locations, and mission objectives. Created scenario-specific UI adaptations for structure fires (building layout), industrial fires (hazardous materials), and wildfires (wind direction, fire spread). Designed adaptive visibility and brightness modes for extreme conditions."
+          }
+        }
+      ]
+    },
+    "detailLabels": {
+      "background": "Background",
+      "methodology": "Methodology",
+      "outcomes": "Outcomes"
+    },
+    "photography": {
+      "title": "Photography",
+      "subtitle": "Capturing beautiful moments in life through the lens",
+      "items": [
+        { "src": "/photos/DSCF0183.jpg", "alt": "Urban night scene" },
+        { "src": "/photos/dscf2257.jpg", "alt": "Street photography" },
+        { "src": "/photos/dscf0955.jpg", "alt": "Landscape" },
+        { "src": "/photos/dscf3845.jpg", "alt": "Architecture" },
+        { "src": "/photos/dscf0274.jpg", "alt": "Portrait" },
+        { "src": "/photos/IMG_6859.jpg", "alt": "Travel moment" },
+        { "src": "/photos/dscf1902.jpg", "alt": "Light and shadow" },
+        { "src": "/photos/dscf2475.jpg", "alt": "Nature detail" },
+        { "src": "/photos/dscf3363.jpg", "alt": "City view" },
+        { "src": "/photos/dscf2501.jpg", "alt": "Quiet moment" },
+        { "src": "/photos/dscf1909.jpg", "alt": "Street scene" },
+        { "src": "/photos/dscf3607.jpg", "alt": "Evening light" },
+        { "src": "/photos/dscf2507.jpg", "alt": "Everyday life" }
+      ]
+    }
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "school": "The University of Sydney",
+        "location": "Sydney, Australia",
+        "degree": "Master of Commerce (Extension) in Finance and Data Analytics",
+        "time": "Jul 2024 – Jun 2026 (Expected)",
+        "details": [
+          "Distinction: Merit Finish",
+          "Relevant Coursework: Data Analysis, Data Visualisation, Financial Applications of Machine Learning, Financial Analysis, Sustainable Financial Strategy, International Business"
+        ]
+      },
+      {
+        "school": "China University of Petroleum (East China)",
+        "location": "Qingdao, China",
+        "degree": "Bachelor of Industrial Design",
+        "time": "Sep 2019 – Jun 2023",
+        "details": [
+          "Thesis: Transformable Toy Design Based on Vaporwave Art",
+          "Relevant Coursework: Design Theories, Product Design, UX Design, User Behaviour"
+        ]
+      }
+    ]
+  },
+  "research": {
+    "title": "Research Experience",
+    "items": [
+      {
+        "title": "Independent Research: Human-AI Collaborative Development",
+        "org": "Independent Research",
+        "time": "2025 – Present",
+        "points": [
+          "Conducting research on AI-assisted development tools (OpenClaw, Claude Code), investigating how non-expert users leverage LLMs for coding",
+          "Examining user interaction patterns with AI coding agents, focusing on prompt engineering strategies and learning trajectories",
+          "Exploring implications of agentic AI systems for democratizing software development"
+        ]
+      },
+      {
+        "title": "Predictive Modelling for UNICEF Australia",
+        "org": "The University of Sydney – Academic Research Project",
+        "time": "2025",
+        "points": [
+          "Developed predictive models for donation likelihood using logistic regression, random forests, and gradient boosting",
+          "Conducted feature engineering and EDA to identify key predictors of donor engagement"
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "items": [
+      {
+        "company": "Xiaomang Technology",
+        "role": "Front-End Design Intern",
+        "location": "Changsha, China",
+        "time": "Feb 2024 – May 2024",
+        "points": [
+          "Supported front-end interface development and platform visual design",
+          "Created key visual assets, layout designs, and interface prototypes"
+        ]
+      },
+      {
+        "company": "Signify (Philips Lighting)",
+        "role": "Product Manager Assistant",
+        "location": "Shanghai, China",
+        "time": "Jul 2022 – Sep 2022",
+        "points": [
+          "Contributed to product design projects involving concept development and process optimization",
+          "Collaborated with cross-functional teams including engineers, designers, and business managers"
+        ]
+      },
+      {
+        "company": "Bohai Bank",
+        "role": "Business Assistant",
+        "location": "Changsha, China",
+        "time": "Jul 2023 – Jan 2024",
+        "points": [
+          "Assisted with lobby operations, customer service, and branch workflow optimization",
+          "Supported management and auditing of corporate banking financial statements"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": [
+      {
+        "name": "Programming & Data",
+        "items": ["Python", "C++", "SQL", "Excel (Advanced)", "Tableau"]
+      },
+      {
+        "name": "Design & Prototyping",
+        "items": ["Figma", "Photoshop", "Illustrator", "Rhino", "SolidWorks", "KeyShot"]
+      },
+      {
+        "name": "Finance",
+        "items": ["Financial Analysis", "Risk Modelling", "ESG Integration"]
+      },
+      {
+        "name": "Languages",
+        "items": ["Mandarin Chinese (Native)", "English (Fluent)"]
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "Hobbies & Interests",
+    "categories": [
+      {
+        "name": "Gaming",
+        "items": ["League of Legends", "Valorant"]
+      },
+      {
+        "name": "Motorsport & Driving",
+        "items": ["Formula One", "Non-purpose Driving"]
+      },
+      {
+        "name": "Creative",
+        "items": ["Photography", "Developing"]
+      },
+      {
+        "name": "Music",
+        "items": ["Canton-pop"]
+      }
+    ]
+  },
+  "chat": {
+    "title": "Chat with Me",
+    "placeholder": "Ask me anything...",
+    "welcome": "👋 Hi! I'm Jiwen's digital avatar. Ask me anything about him!",
+    "quickQuestions": [
+      "Why did you switch from design to data?",
+      "What's your Valorant rank?",
+      "How was this website built?",
+      "What do you think about AI?"
+    ],
+    "send": "Send",
+    "thinking": "Thinking..."
+  }
+}
