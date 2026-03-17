@@ -30,7 +30,24 @@ export default function Home() {
       </main>
       <ChatWidget isOpen={chatOpen} onToggle={() => setChatOpen(!chatOpen)} />
 
-      <footer className="py-10 text-center text-xs text-neutral-400 border-t border-neutral-100">
+      <footer className="py-10 text-center text-xs text-neutral-400 border-t border-neutral-100 space-y-2">
+        <div className="flex items-center justify-center gap-4">
+          <a
+            href="mailto:jiwen.wang2000@gmail.com"
+            className="hover:text-neutral-700 transition-colors"
+          >
+            Email
+          </a>
+          <span className="text-neutral-200">·</span>
+          <a
+            href="https://github.com/Erosionpp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-neutral-700 transition-colors"
+          >
+            GitHub
+          </a>
+        </div>
         <p>&copy; {new Date().getFullYear()} Jiwen Wang</p>
       </footer>
     </LanguageProvider>
