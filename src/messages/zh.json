@@ -137,6 +137,7 @@
           ],
           "image": "/projects/inno-cover.png",
           "images": [
+            "/projects/inno-hero.png",
             "/projects/inno-cover.png",
             "/projects/inno-research.jpg",
             "/projects/inno-sketch.jpg",
